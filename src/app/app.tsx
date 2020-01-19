@@ -1,5 +1,5 @@
 import React from 'react';
-import { Todos } from "./Todos";
+import { Todos } from "./todos/todos";
 
 const App: React.FC = () => {
     return (

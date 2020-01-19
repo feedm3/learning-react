@@ -14,8 +14,7 @@ Jest has a build in feature to create and compare snapshots: https://jestjs.io/d
 
 There is also a handy matchers library, that is added by default from CRA: https://github.com/testing-library/jest-dom
 
-> The matching library currently has some problems with typings. Thats why we need to add 
-> `/// <reference types="@testing-library/jest-dom/extend-expect" />` on top of the test file until 
+> The matching library currently has some problems with typings. Thats why we stick to version 4.2.4 until 
 > https://github.com/testing-library/jest-dom/issues/123 is merged.
 
 ## React Testing Library

@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { getClientWidth } from "./todos-util";
 
 interface Todo {
     id: string;
@@ -11,6 +12,9 @@ export const Todos: React.FC = () => {
     const todoInputRef = useRef<HTMLInputElement>(null);
 
     const onClickAddTodo = () => {
+        // we just call this function to test mocking
+        getClientWidth(todoInputRef.current!);
+
         const title = todoInputRef.current!.value;
 
         if (!title) {

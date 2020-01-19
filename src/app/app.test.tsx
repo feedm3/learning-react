@@ -1,7 +1,7 @@
-/// <reference types="@testing-library/jest-dom/extend-expect" />
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import App from './App';
+import App from './app';
+
 afterEach(() => {
     cleanup();
 });

@@ -1,10 +1,16 @@
 import React from 'react';
 import { cleanup, render, fireEvent } from '@testing-library/react';
 import renderer from 'react-test-renderer';
-import { Todos } from "./Todos";
+import { Todos } from './todos';
+import * as util from "./todos-util";
+
+jest.mock('./todos-util');
+// to get typescript definitions we create a new object with jest types
+const mockedUtils = util as jest.Mocked<typeof util>;
 
 afterEach(() => {
     cleanup();
+    jest.resetAllMocks();
 });
 
 describe('<Todos />', () => {
@@ -52,5 +58,20 @@ describe('<Todos />', () => {
 
         const allListElements = container.querySelectorAll('li');
         expect(allListElements).toHaveLength(1);
+    });
+
+    it('should be possible to mock a function', function () {
+        mockedUtils.getClientWidth.mockImplementation(() => 300);
+
+        // arrange
+        const { getByText } = render(<Todos/>);
+        const addButton = getByText('Add todo');
+
+        // act
+        fireEvent.click(addButton);
+
+        // assert
+        expect(mockedUtils.getClientWidth).toReturnWith(300);
+        expect(mockedUtils.getClientWidth).toBeCalledTimes(1);
     });
 });
