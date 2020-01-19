@@ -1,7 +1,8 @@
 # Learning React Testing
 
-This repository contains some react tests. We use jest as test runner, which is the default for most React projects.
+![](https://github.com/feedm3/learning-react-testing/workflows/CI/badge.svg)
 
+This repository contains some react tests. We use jest as test runner, which is the default for most React projects.
 
 ## Jest
 
