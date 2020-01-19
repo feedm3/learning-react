@@ -4,6 +4,10 @@
 
 This repository contains some react tests. We use jest as test runner, which is the default for most React projects.
 
+## General
+
+Good article about sliding down the testing pyramid: https://www.cypress.io/blog/2018/04/02/sliding-down-the-testing-pyramid/
+
 ## Jest
 
 Jest has a build in feature to create and compare snapshots: https://jestjs.io/docs/en/snapshot-testing
@@ -25,3 +29,14 @@ components in the same way es the user does ((https://reactjs.org/docs/test-util
     
 > Things like `clientWidth` cannot be tested, as the test is running in
 > a simulated DOM API ([`JSDOM`](https://github.com/jsdom/jsdom)) which doesn't have a layout engine (https://github.com/jsdom/jsdom/issues/1322)
+
+## Cypress
+
+Cypress allows us to run the tests in a real browser.
+
+https://github.com/bahmutov/cypress-react-unit-test
+
+It looks like this is currently more in a beta state:
+
+- https://github.com/bahmutov/cypress-react-unit-test/issues/51
+- https://github.com/bahmutov/cypress-react-unit-test/issues/40
