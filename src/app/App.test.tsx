@@ -6,7 +6,7 @@ afterEach(() => {
     cleanup();
 });
 
-test('<App />', () => {
+describe('<App />', () => {
     it('should render a heading', function () {
         const { getByText } = render(<App/>);
         const header = getByText(/Learning/i);
