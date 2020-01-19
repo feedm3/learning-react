@@ -1,5 +1,6 @@
 import React from 'react';
 import { cleanup, render, fireEvent } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import { Todos } from "./Todos";
 
 afterEach(() => {
@@ -10,6 +11,13 @@ describe('<Todos />', () => {
     it('should render', function () {
         const { container } = render(<Todos/>);
         expect(container).toBeInTheDocument();
+    });
+
+    it('should match the snapshot', function () {
+        const tree = renderer
+            .create(<Todos/>)
+            .toJSON();
+        expect(tree).toMatchSnapshot();
     });
 
     it('should not add todo if input is empty', function () {
