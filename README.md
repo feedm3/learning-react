@@ -8,6 +8,12 @@ This repository contains some react tests. We use jest as test runner, which is 
 
 Jest has a build in feature to create and compare snapshots: https://jestjs.io/docs/en/snapshot-testing
 
+There is also a handy matchers library, that is added by default from CRA: https://github.com/testing-library/jest-dom
+
+> The matching library currently has some problems with typings. Thats why we need to add 
+> `/// <reference types="@testing-library/jest-dom/extend-expect" />` on top of the test file until 
+> https://github.com/testing-library/jest-dom/issues/123 is merged.
+
 ## React Testing Library
 
 The React team recommends the react-testing-library over Enzyme, as it encourages to write tests that use the 
@@ -15,6 +21,7 @@ components in the same way es the user does ((https://reactjs.org/docs/test-util
 
 - Cheatsheet: https://testing-library.com/docs/vue-testing-library/cheatsheet
 - Recipes: https://testing-library.com/docs/recipes
+- External recipes: https://react-testing-examples.com/jest-rtl/
     
 > Things like `clientWidth` cannot be tested, as the test is running in
-> a simulated DOM API (`JSDOM`) which doesn't have a layout engine (https://github.com/jsdom/jsdom/issues/1322)
+> a simulated DOM API ([`JSDOM`](https://github.com/jsdom/jsdom)) which doesn't have a layout engine (https://github.com/jsdom/jsdom/issues/1322)
