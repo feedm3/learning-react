@@ -33,7 +33,7 @@ export const Todos: React.FC = () => {
 
     return (
         <div>
-            <h2>Todos:</h2>
+            <h3>Todos:</h3>
             <ul>
                 {
                     todos.map(todo => {

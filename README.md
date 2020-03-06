@@ -1,6 +1,6 @@
-# Learning React Testing
+# Learning React
 
-![](https://github.com/feedm3/learning-react-testing/workflows/CI/badge.svg)
+![](https://github.com/feedm3/learning-react/workflows/CI/badge.svg)
 
 This repository contains some react tests. We use jest as test runner, which is the default for most React projects.
 
@@ -31,7 +31,7 @@ components in the same way es the user does ((https://reactjs.org/docs/test-util
 
 ## Cypress
 
-Cypress allows us to run the tests in a real browser.
+Cypress allows us to run the tests in a real browser. It can be used for unit tests also:
 
 https://github.com/bahmutov/cypress-react-unit-test
 
