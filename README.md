@@ -17,11 +17,12 @@ There is also a handy matchers library, that is added by default from CRA: https
 ## React Testing Library
 
 The React team recommends the react-testing-library over Enzyme, as it encourages to write tests that use the 
-components in the same way es the user does ((https://reactjs.org/docs/test-utils.html).
+components in the same way es the user does (https://reactjs.org/docs/test-utils.html).
 
+- Intoduction: https://testing-library.com/docs/react-testing-library/intro
 - Cheatsheet: https://testing-library.com/docs/react-testing-library/cheatsheet
-- Recipes: https://testing-library.com/docs/recipes
-- External recipes: https://react-testing-examples.com/jest-rtl/
+- Recipes: https://testing-library.com/docs/recipes (also https://react-testing-examples.com/jest-rtl/)
+- Handy DOM matchers: https://github.com/testing-library/jest-dom#custom-matchers
     
 > Things like `clientWidth` cannot be tested, as the test is running in
 > a simulated DOM API ([`JSDOM`](https://github.com/jsdom/jsdom)) which doesn't have a layout engine (https://github.com/jsdom/jsdom/issues/1322)
