@@ -14,15 +14,12 @@ Jest has a build in feature to create and compare snapshots: https://jestjs.io/d
 
 There is also a handy matchers library, that is added by default from CRA: https://github.com/testing-library/jest-dom
 
-> The matching library currently has some problems with typings. Thats why we stick to version 4.2.4 until 
-> https://github.com/testing-library/jest-dom/issues/123 is merged.
-
 ## React Testing Library
 
 The React team recommends the react-testing-library over Enzyme, as it encourages to write tests that use the 
 components in the same way es the user does ((https://reactjs.org/docs/test-utils.html).
 
-- Cheatsheet: https://testing-library.com/docs/vue-testing-library/cheatsheet
+- Cheatsheet: https://testing-library.com/docs/react-testing-library/cheatsheet
 - Recipes: https://testing-library.com/docs/recipes
 - External recipes: https://react-testing-examples.com/jest-rtl/
     
