@@ -1,6 +1,7 @@
 import React from 'react';
 import { Todos } from "./testing/todos";
 import { ReducerComponent } from "./reducer/reducer-component";
+import { ReducerAndContextContainer } from "./reducer/reducer-context";
 
 const App: React.FC = () => {
     return (
@@ -10,6 +11,8 @@ const App: React.FC = () => {
             <Todos/>
             <h2>Reducer</h2>
             <ReducerComponent />
+            <h2>Reducer and Context</h2>
+            <ReducerAndContextContainer/>
         </div>
     );
 };
